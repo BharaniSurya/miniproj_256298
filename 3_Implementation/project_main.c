@@ -1,4 +1,4 @@
-#include <calculator_operations.h>
+#include "calculator_operations.h"
 
 /* Status of the operation requested */
 #define VALID   (1)
@@ -45,7 +45,7 @@ void car_menu(void)
         exit(0);
     }
 
-    if(INVALID != valid_operation(calculator_operation))
+    if(INVALID != valid_operation(car_operation))
     {
         printf("\n\tEnter your Numbers with space between them\n");
         // __fpurge(stdin);
