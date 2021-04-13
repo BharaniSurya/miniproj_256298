@@ -5,7 +5,7 @@
 #define INVALID (0)
 
 /* Calculator operation requested by user*/
-unsigned int calculator_operation = 0;
+unsigned int car_operation = 0;
 
 /* Operands on which calculation is performed */
 int calculator_operand1 = 0;
@@ -23,23 +23,23 @@ int valid_operation(int operation);
 /* Start of the application */
 int main(int argc, char *argv[])
 {
-    printf("\n****Calculator****\n");
+    printf("\n****CAR SERVICE CENTER****\n");
     while(1)
     {
-        calculator_menu();
+        car_menu();
     }
 }
 
-void calculator_menu(void)
+void car_menu(void)
 {
     printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Exit");
+    printf("\n1. create profile\n2. update profile\n3. delete profile \n4.create service \n5.update service \n6.End service \n7. search profile \n8.search service \n9. Exit");
     printf("\n\tEnter your choice\n");
    
      // __fpurge(stdin);
-    scanf("%d", &calculator_operation);
+    scanf("%d", &car_operation);
 
-    if(EXIT == calculator_operation)
+    if(EXIT == car_operation)
     {
         printf("\nThank you. Exiting the Application\n");
         exit(0);
@@ -59,47 +59,60 @@ void calculator_menu(void)
         return;
         
     }
-    switch(calculator_operation)
+    switch(car_operation)
     {
-        case ADD:
-            printf("\n\t%d + %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            add(calculator_operand1, calculator_operand2));
+        case 1:
+            create_profile();
             
             // __fpurge(stdin);
             getchar();
             break;
-        case SUBTRACT:
-            printf("\n\t%d - %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            subtract(calculator_operand1, calculator_operand2));
+        case 2:
+            update_profile();
+            // __fpurge(stdin);
+            getchar();
+            break;
+        case 3:
+            delete_profile();
             
             // __fpurge(stdin);
             getchar();
             break;
-        case MULTIPLY:
-            printf("\n\t%d * %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            multiply(calculator_operand1, calculator_operand2));
-            
-            // __fpurge(stdin);
-            getchar();
-            break;
-        case DIVIDE:
-            printf("\n\t%d / %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            divide(calculator_operand1, calculator_operand2));
+        case 4:
+            create_service();
             
             // __fpurge(stdin);
             getchar();
             break;
         case 5:
-            exit(0);
+            update_service();
+            
+            // __fpurge(stdin);
+            getchar();
             break;
+        case 6:
+            end_service();
+            
+            // __fpurge(stdin);
+            getchar();
+            break;
+        case 7:
+            search_profile();
+            
+            // __fpurge(stdin);
+            getchar();
+            break;
+        case 8:
+            search_service();
+            
+            // __fpurge(stdin);
+            getchar();
+            break;
+        case 9:
+            printf("Thank you!!!");
+            // __fpurge(stdin);
+            getchar();
+            break;                
         default:
             printf("\n\t---It should never come here---\n");
     }
@@ -108,5 +121,5 @@ void calculator_menu(void)
 int valid_operation(int operation)
 {
     /* Check if the operation is a valid operation */
-    return ((ADD <= operation) && (EXIT >= operation)) ? VALID: INVALID;
+    return ((1 <= operation) && (9 >= operation)) ? VALID: INVALID;
 }
