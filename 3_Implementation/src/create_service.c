@@ -7,7 +7,7 @@ void create_service()
     profile p={0};
     service ser ={0};
     FILE *fp=NULL;
-    fp = fopen(FILE_NAME,"ab+");
+    fp = fopen(service_data.txt,"ab+");
     if(fp == NULL)
     {
         printf("File is not opened\n");
