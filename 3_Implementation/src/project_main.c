@@ -38,7 +38,7 @@ void car_menu(void)
    
      // __fpurge(stdin);
     scanf("%d", &car_operation);
-    /*
+
     if(EXIT == car_operation)
     {
         printf("\nThank you. Exiting the Application\n");
@@ -59,7 +59,6 @@ void car_menu(void)
         return;
         
     }
-    */
     switch(car_operation)
     {
         case 1:
