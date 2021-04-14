@@ -25,16 +25,16 @@ the customers to view the process going on the car and alert automatically to th
 ## Defining Our System
     -- TBD
 ## SWOT ANALYSIS
-s:
+### s:
    makes easy to maintain a record.
    updation of the records are simple.
-w:
+### w:
   need a power supply to use it while book records don't.
    if there is some system crash ,all the data would be lost forever.
-o:
+### o:
     can be integrated with the cloud to be accessed from any computer.
    it can be made into an app where even the customer can see the progress
-t:
+### t:
     unlike book records if someone manipulates with tha data it is hard to find out.
 
 # 4W&#39;s and 1&#39;H
@@ -63,6 +63,7 @@ t:
 ## High Level Requirements:
 --- TBD in Tabular Format 
 -- ID | Description | Status (Implemented/Future)
+   1  | HR01        | I
 
 
 ##  Low level Requirements:

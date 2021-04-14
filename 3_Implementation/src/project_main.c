@@ -23,7 +23,7 @@ int valid_operation(int operation);
 /* Start of the application */
 int main(int argc, char *argv[])
 {
-    printf("\n****CAR SERVICE CENTER****\n");
+    printf("\n****CAR_SERVICE_CENTER****\n");
     while(1)
     {
         car_menu();
@@ -34,12 +34,12 @@ void car_menu(void)
 {
     printf("\nAvailable Operations\n");
     printf("\n1. create profile\n2. update profile\n3. delete profile \n4.create service \n5.update service \n6.End service \n7. search profile \n8.search service \n9. Exit");
-    printf("\n\tEnter your choice\n");
+    printf("\n\tEnter your choice:");
    
      // __fpurge(stdin);
     scanf("%d", &car_operation);
-
-    if(EXIT == car_operation)
+    printf("%d",car_operation);
+/*    if(EXIT == car_operation)
     {
         printf("\nThank you. Exiting the Application\n");
         exit(0);
@@ -59,9 +59,11 @@ void car_menu(void)
         return;
         
     }
+    */
     switch(car_operation)
     {
         case 1:
+            printf("\nYou opted to create profile\n ");
             create_profile();
             
             // __fpurge(stdin);

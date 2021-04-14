@@ -1,22 +1,30 @@
 # Name of the project
-PROJECT_NAME = Calculator
+PROJECT_NAME = Car_Service_Management 
 
 # Output directory
-BUILD = build
+BUILD = src
 
 # All source code files
 SRC = project_main.c\
-src/calculator_operations.c
+src/create_profile.c\
+src/create_service.c\
+src/delete_profile.c\
+src/end_service.c\
+src/is_id_valid.c\
+src/search_profile.c\
+src/search_service.c\
+src/update_profile.c\
+src/update_service.c\
 
 # All test source files
 TEST_SRC = src/calculator_operations.c\
 test/test_calculator_operations.c\
 unity/unity.c\
 
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).exe
 
 # All include folders with header files
-INC	= -Iinc\
+INC	= inc/car_operations.h \
 -Iunity\
 
 #Library Inlcudes
@@ -25,7 +33,7 @@ INC	= -Iinc\
 INCLUDE_LIBS =
 
 # Project Output name
-PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
+PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).exe
 
 # Document files
 DOCUMENTATION_OUTPUT = documentation/html
