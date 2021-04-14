@@ -61,8 +61,9 @@ the customers to view the process going on the car and alert automatically to th
 
 # Detail requirements
 ## High Level Requirements:
---- TBD in Tabular Format 
+
    | ID | Description | Status (Implemented/Future) |
+   | -- | ----------- | --------------------------- |
    | 1  | HR01        | I                           |
 
 
