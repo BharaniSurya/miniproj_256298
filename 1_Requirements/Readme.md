@@ -64,9 +64,27 @@ the customers to view the process going on the car and alert automatically to th
 
    | ID | Description | Status (Implemented/Future) |
    | -- | ----------- | --------------------------- |
-   | 1  | HR01        | I                           |
+   | H01  | To create a profile for customer        | I |
+   | H02  | To edit an existing profile             | I |
+   | H03  | To delete a profile of leaving customer | I |
+   | H04  | To add a service to a customers profile | I |
+   | H05  | To update the service of a customer     | I |
+   | H06  | To End a service of a customer          | I |
+   | H07  | To search for a profile of customer     | I |
+   | H08  | To search for a service for a customer  | I |
 
 
 ##  Low level Requirements:
---- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
+
+| ID | Description | Status (Implemented/Future) |
+| -- | ----------- | --------------------------- |
+| L01 | Creating a file for the profile   | I |
+| L02 | To check whether the id provided by the user is unique  | I |
+| L03 | Appending the information in a file | I |
+| L04 | search id and return found or not found | I |
+| L05 | create a file for service information | I |
+| L06 | add information if the customer has a profile | I |
+| L07 | remove the service information if service is done | I |
+| L08 | remove profile if customer wants to quit service at all | I |
+| L09 | if id matches print the information of profile | I |
+| L10 | if id matches print information of service | i | 
