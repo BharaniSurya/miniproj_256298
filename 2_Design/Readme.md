@@ -3,11 +3,11 @@
 ## High Level Design 
 
 --- TBD Structural and Behavioural Diagram
-![HighLevelStructuralDiagram](Link to Pic)
-![HighLevelBehaviouralDiagram](Link to Pic)
+![HighLevelStructuralDiagram](E:\\bharani_surya_real _official\\git repository\\AppliedSDLC_Template\\AppliedSDLC_Template\\2_Design\\struct_high_1.PNG)
+![HighLevelBehaviouralDiagram](E:\\bharani_surya_real _official\\git repository\\AppliedSDLC_Template\\AppliedSDLC_Template\\2_Design\\beh_high_1.PNG)
 
 ## Low Level Design 
 
 --- TBD Structural and Behavioural Diagram
-![FeaturesLevelStructuralDiagram](Link to Pic)
-![FeaturesBehaviouralDiagram](Link to Pic)
+![FeaturesLevelStructuralDiagram]((E:\\bharani_surya_real _official\\git repository\\AppliedSDLC_Template\\AppliedSDLC_Template\\2_Design\\struct_low_1.PNG)
+![FeaturesBehaviouralDiagram](E:\\bharani_surya_real _official\\git repository\\AppliedSDLC_Template\\AppliedSDLC_Template\\2_Design\\beh_low_1.PNG)
