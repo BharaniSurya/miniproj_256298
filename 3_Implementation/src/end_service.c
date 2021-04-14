@@ -7,8 +7,8 @@ void end_service()
     FILE *fp = NULL;
     FILE *tmpFp = NULL;
 
-    printf(" To Delete Books:\n");
-    fp = fopen("E:\bharani_surya_real _official \ git repository \ AppliedSDLC_Template\ AppliedSDLC_Template\3_Implementation\service_data.txt","rb");
+    printf(" To End service:\n");
+    fp = fopen("E:\\bharani_surya_real _official\\git repository\\AppliedSDLC_Template\\AppliedSDLC_Template\\3_Implementation\\service_data.txt","rb");
     if(fp == NULL)
     {
         printf("File is not opened\n");
@@ -22,11 +22,11 @@ void end_service()
         exit(1);
     }
     
-    printf("\n\t\t\tEnter customer ID to delete:");
+    printf("\nEnter customer ID to delete:");
     scanf("%s",id_delete);
     while (fread (&ser, sizeof(ser), 1, fp))
     {
-        if(strcmp(ser.id,id_delete)!=0)
+        if(strcmp(ser.id,id_delete))
         {
             fwrite(&ser,sizeof(ser), 1, tmpFp);
         }
@@ -38,6 +38,6 @@ void end_service()
     (f)? printf("\n\t\t\tProfile deleted successfully....."):printf("\n\t\t\tProfile not found");
     fclose(fp);
     fclose(tmpFp);
-    remove("E:\bharani_surya_real _official \ git repository \ AppliedSDLC_Template\ AppliedSDLC_Template\3_Implementation\service_data.txt");
-    rename("tmp.bin","E:\bharani_surya_real _official \ git repository \ AppliedSDLC_Template\ AppliedSDLC_Template\3_Implementation\service_data.txt");
+    remove("E:\\bharani_surya_real _official\\git repository\\AppliedSDLC_Template\\AppliedSDLC_Template\\3_Implementation\\service_data.txt");
+    rename("tmp.bin","E:\\bharani_surya_real _official\\git repository\\AppliedSDLC_Template\\AppliedSDLC_Template\\3_Implementation\\service_data.txt");
 }

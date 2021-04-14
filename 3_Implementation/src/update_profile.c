@@ -3,15 +3,25 @@
 void update_profile()
 {
     int f=0;
+    char new_name[300],new_phone_numb[10],new_email_id[50];
     profile p={0};
     FILE *fp = NULL;
+    FILE *tmpFp = NULL;
     char id1[5];
-    fp = fopen("E:\bharani_surya_real _official \ git repository \ AppliedSDLC_Template\ AppliedSDLC_Template\3_Implementation\profile_data.txt","rb+");
+    fp = fopen("E:\\bharani_surya_real _official\\git repository\\AppliedSDLC_Template\\AppliedSDLC_Template\\3_Implementation\\profile_data.txt","rb+");
     if(fp == NULL)
     {
         printf("File is not opened\n");
-        exit(1);
+        getchar();
     }
+    tmpFp = fopen("tmp.bin","wb");
+    if(tmpFp == NULL)
+    {
+        fclose(fp);
+        printf("File is not opened\n");
+        getchar();
+    }
+
     printf("\nTo Update your profile:");
     printf("\nEnter your id:");
     fflush(stdin);
@@ -21,24 +31,35 @@ void update_profile()
         if(!strcmp(p.id,id1))
         {
             f=1;
-            printf("\nEnter name:");
+            printf("\nold name : %s \nEnter new name: ",p.name);
             fflush(stdin);
-            fgets(p.name,300,stdin);
-            printf("\nEnter phone number:");
+            fgets(new_name,300,stdin);
+            strcpy(p.name,new_name);
+            printf("\nnew name:%s",p.name);
+            printf("\nold phone number: %s \nEnter phone number:",p.phone_numb);
             fflush(stdin);
-            fgets(p.phone_numb,10,stdin);
-            printf("\nEnter mail id:");
+            fgets(new_phone_numb,10,stdin);
+            strcpy(p.phone_numb,new_phone_numb);
+            printf("\nold mail id: %s  \nEnter mail id:",p.email_id);
             fflush(stdin);
-            fgets(p.email_id,50,stdin);
-            break;
+            fgets(new_email_id,50,stdin);
+            strcpy(p.email_id,new_email_id);
+            fwrite(&p,sizeof(p), 1, tmpFp);
+        }
+        else
+        {
+            fwrite(&p,sizeof(p), 1, tmpFp);
         }
     }
     if(f==0)
     {
         printf("NO RECORD FOUND!");
-        exit(1);
+        getchar();
     }
-    fwrite(&p,sizeof(p), 1, fp);
     fclose(fp);
+    fclose(tmpFp);
+    remove("E:\\bharani_surya_real _official\\git repository\\AppliedSDLC_Template\\AppliedSDLC_Template\\3_Implementation\\profile_data.txt");
+    rename("tmp.bin","E:\\bharani_surya_real _official\\git repository\\AppliedSDLC_Template\\AppliedSDLC_Template\\3_Implementation\\profile_data.txt");
+
 
 }

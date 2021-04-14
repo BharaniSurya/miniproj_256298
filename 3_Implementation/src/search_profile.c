@@ -6,13 +6,13 @@ void search_profile()
     profile p={0};
     FILE *fp = NULL;
     char id1[5];
-    fp = fopen("E:\bharani_surya_real _official \ git repository \ AppliedSDLC_Template\ AppliedSDLC_Template\3_Implementation\profile_data.txt","rb+");
+    fp = fopen("E:\\bharani_surya_real _official\\git repository\\AppliedSDLC_Template\\AppliedSDLC_Template\\3_Implementation\\profile_data.txt","rb+");
     if(fp == NULL)
     {
         printf("File is not opened\n");
         exit(1);
     }
-    printf("\nTo Update your profile:");
+    printf("\nTo search your profile:");
     printf("\nEnter your id:");
     fflush(stdin);
     fgets(id1,5,stdin);
@@ -30,7 +30,7 @@ void search_profile()
     if(f==0)
     {
         printf("NO RECORD FOUND!");
-        exit(1);
+        getchar();
     }
     fclose(fp);
 }    

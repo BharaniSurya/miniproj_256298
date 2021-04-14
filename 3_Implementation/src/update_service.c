@@ -5,13 +5,22 @@ void update_service()
     int f=0;
     service ser={0};
     FILE *fp = NULL;
+    FILE *tmpFp = NULL;
     char id1[5];
-    fp = fopen("E:\bharani_surya_real _official \ git repository \ AppliedSDLC_Template\ AppliedSDLC_Template\3_Implementation\service_data.txt","rb+");
+    fp = fopen("E:\\bharani_surya_real _official\\git repository\\AppliedSDLC_Template\\AppliedSDLC_Template\\3_Implementation\\service_data.txt","rb+");
     if(fp == NULL)
     {
         printf("File is not opened\n");
         exit(1);
     }
+    tmpFp = fopen("tmp.bin","wb");
+    if(tmpFp == NULL)
+    {
+        fclose(fp);
+        printf("File is not opened\n");
+        exit(1);
+    }
+
     printf("\nTo Update your service:");
     printf("\nEnter your id:");
     fflush(stdin);
@@ -29,22 +38,30 @@ void update_service()
             fgets(ser.car_model,50,stdin);
             printf("\nDo you want only regular service[yes:1,No:0]:");
             fflush(stdin);
-            fgets(ser.regular_service,1,stdin);
+            scanf("%d",&ser.regular_service);
             if(ser.regular_service==0)
             {
                 printf("\nHow many extra services do you require:");
                 fflush(stdin);
-                fgets(ser.no_of_extra_service,1,stdin);
+                scanf("%d",&ser.no_of_extra_service);
             }
-            break;
+            fwrite(&ser,sizeof(ser), 1, tmpFp);
+            
+        }
+        else
+        {
+            fwrite(&ser,sizeof(ser), 1, tmpFp);
         }
     }
     if(f==0)
     {
         printf("NO RECORD FOUND!");
-        exit(1);
+        getchar();
     }
-    fwrite(&ser,sizeof(ser), 1, fp);
+    
     fclose(fp);
+    fclose(tmpFp);
+    remove("E:\\bharani_surya_real _official\\git repository\\AppliedSDLC_Template\\AppliedSDLC_Template\\3_Implementation\\service_data.txt");
+    rename("tmp.bin","E:\\bharani_surya_real _official\\git repository\\AppliedSDLC_Template\\AppliedSDLC_Template\\3_Implementation\\service_data.txt");
 
 }

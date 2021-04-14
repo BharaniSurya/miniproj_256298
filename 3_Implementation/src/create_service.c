@@ -7,7 +7,7 @@ void create_service()
     profile p={0};
     service ser ={0};
     FILE *fp=NULL;
-    fp = fopen("E:\bharani_surya_real _official \ git repository \ AppliedSDLC_Template \ AppliedSDLC_Template\3_Implementation\service_data.txt","ab+");
+    fp = fopen("E:\\bharani_surya_real _official\\git repository\\AppliedSDLC_Template\\AppliedSDLC_Template\\3_Implementation\\service_data.txt","ab+");
     if(fp == NULL)
     {
         printf("File is not opened\n");
@@ -29,14 +29,14 @@ void create_service()
     printf("\nEnter your car model");
     fflush(stdin);
     fgets(ser.car_model,50,stdin);
-    printf("\nDo you want only regular service[yes:1,No:0]:");
+    printf("\nDo you want only regular service[yes:'1',No:'0']:");
     fflush(stdin);
-    fgets(ser.regular_service,1,stdin);
+    scanf("%d",&ser.regular_service);
     if(ser.regular_service==0)
     {
         printf("\nHow many extra services do you require:");
         fflush(stdin);
-        fgets(ser.no_of_extra_service,1,stdin);
+        scanf("%d",&ser.no_of_extra_service);
     }
     else
     {

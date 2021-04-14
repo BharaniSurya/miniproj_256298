@@ -7,8 +7,8 @@ void delete_profile()
     FILE *fp = NULL;
     FILE *tmpFp = NULL;
 
-    printf(" To Delete Books:\n");
-    fp = fopen("E:\bharani_surya_real _official \ git repository \ AppliedSDLC_Template\ AppliedSDLC_Template\3_Implementation\profile_data.txt","rb");
+    printf(" To Delete profile:\n");
+    fp = fopen("E:\\bharani_surya_real _official\\git repository\\AppliedSDLC_Template\\AppliedSDLC_Template\\3_Implementation\\profile_data.txt","rb");
     if(fp == NULL)
     {
         printf("File is not opened\n");
@@ -38,6 +38,6 @@ void delete_profile()
     (f)? printf("\n\t\t\tProfile deleted successfully....."):printf("\n\t\t\tProfile not found");
     fclose(fp);
     fclose(tmpFp);
-    remove("E:\bharani_surya_real _official \ git repository \ AppliedSDLC_Template\ AppliedSDLC_Template\3_Implementation\profile_data.txt");
-    rename("tmp.bin","E:\bharani_surya_real _official \ git repository \ AppliedSDLC_Template\ AppliedSDLC_Template\3_Implementation\profile_data.txt");
+    remove("E:\\bharani_surya_real _official\\git repository\\AppliedSDLC_Template\\AppliedSDLC_Template\\3_Implementation\\profile_data.txt");
+    rename("tmp.bin","E:\\bharani_surya_real _official\\git repository\\AppliedSDLC_Template\\AppliedSDLC_Template\\3_Implementation\\profile_data.txt");
 }

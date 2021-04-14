@@ -5,7 +5,7 @@ void create_profile()
     int s=0;
     profile p={0};
     FILE *fp=NULL;
-    fp = fopen("E:\bharani_surya_real _official \ git repository \ AppliedSDLC_Template\ AppliedSDLC_Template\3_Implementation\profile_data.txt","ab+");
+    fp = fopen("E:\\bharani_surya_real _official\\git repository\\AppliedSDLC_Template\\AppliedSDLC_Template\\3_Implementation\\profile_data.txt","ab+");
     if(fp == NULL)
     {
         printf("File is not opened\n");
