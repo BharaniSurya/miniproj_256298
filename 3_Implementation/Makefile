@@ -2,21 +2,22 @@ PROJ_NAME = CALCULATOR
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 
-SRC = src/create_profile.c \
-src/create_service.c \
-src/delete_profile.c \
-src/end_service.c \
-src/is_id_valid.c \
-src/search_profile.c \
-src/search_service.c \
-src/update_profile.c \
-src/update_service.c 
+SRC = 3_Implementation/project_main.c \
+3_Implementation/src/create_profile.c \
+3_Implementation/src/create_service.c \
+3_Implementation/src/delete_profile.c \
+3_Implementation/src/end_service.c \
+3_Implementation/src/is_id_valid.c \
+3_Implementation/src/search_profile.c \
+3_Implementation/src/search_service.c \
+3_Implementation/src/update_profile.c \
+3_Implementation/src/update_service.c 
 
-TEST_SRC = test/car_service_testing.c\
-unity/unity.c
+TEST_SRC = 3_Implementation/test/car_service_testing.c\
+3_Implementation/unity/unity.c
 
-INC = -Iinc\
--Iunity
+INC = 3_Implementation/-Iinc\
+3_Implementation/-Iunity
 
 #To check if the OS is Windows or Linux and set the executable file extension and delete command accordingly
 ifdef OS
