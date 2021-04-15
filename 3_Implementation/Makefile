@@ -2,7 +2,7 @@
 PROJECT_NAME = Car_Service_Management 
 
 # Output directory
-BUILD = src
+BUILD = src 
 
 # All source code files
 SRC = src/project_main.c \
@@ -14,19 +14,21 @@ src/is_id_valid.c \
 src/search_profile.c \
 src/search_service.c \
 src/update_profile.c \
-src/update_service.c \
+src/update_service.c 
 
 # All test source files
 TEST_SRC = src/is_id_valid.c \
 test/car_service_testing.c\
-unity/unity.c\
+unity/unity.c
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).exe
 
 # All include folders with header files
 INC	= inc/car_operations.h \
 inc/car_service_test.h \
--Iunity\
+unity/unity_internals.h \
+unity/unity.h \
+-I unity 
 
 #Library Inlcudes
 #if working with CUnit 
@@ -41,6 +43,19 @@ DOCUMENTATION_OUTPUT = documentation/html
 
 # Default target built
 $(PROJECT_NAME):all
+
+
+ifdef OS
+   RM = del 
+   FixPath = $(subst /,\,$1)
+   EXEC = exe
+else
+   ifeq ($(shell uname), Linux)
+      RM = rm -rf
+      FixPath = $1
+	  EXEC = out
+   endif
+endif
 
 # Run the target even if the matching name exists
 .PHONY: run clean test doc all
