@@ -10,7 +10,7 @@
 #include <stdlib.h>
 //#include <stdio_ext.h>
 #include <string.h>
-#include <malloc.h>
+
 
 /**
 *  adds the operand1 and operand2 and returns the result

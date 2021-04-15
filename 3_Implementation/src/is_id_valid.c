@@ -1,7 +1,9 @@
 #include "car_operations.h"
 int is_id_valid(const char *id1)
 {
-    int f=0;
+    int f=1,a=1;
+    int* ptr;
+    ptr=(int*)malloc(a*sizeof(int));      
     profile p = {0};
     FILE *fp = NULL;
     fp = fopen("E:\\bharani_surya_real _official\\git repository\\AppliedSDLC_Template\\AppliedSDLC_Template\\3_Implementation\\profile_data.txt","rb");
@@ -18,6 +20,7 @@ int is_id_valid(const char *id1)
             break;
         }
     }
+    free(ptr);
     fclose(fp);
     return(f);
 }
