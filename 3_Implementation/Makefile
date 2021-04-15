@@ -2,7 +2,7 @@ PROJ_NAME = CALCULATOR
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 
-SRC = project_main.c \
+SRC = main.c \
 src/create_profile.c \
 src/create_service.c \
 src/delete_profile.c \

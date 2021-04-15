@@ -4,22 +4,6 @@
 #define VALID   (1)
 #define INVALID (0)
 
-/* Calculator operation requested by user*/
-unsigned int car_operation = 0;
-
-/* Operands on which calculation is performed */
-int calculator_operand1 = 0;
-int calculator_operand2 = 0;
-
-/* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, EXIT };
-
-/* Display the menu of operations supported */
-void calculator_menu(void);
-/* Verifies the requested operations validity */
-int valid_operation(int operation);
-
-
 /* Start of the application */
 int main(int argc, char *argv[])
 {
