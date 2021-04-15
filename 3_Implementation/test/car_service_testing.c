@@ -11,7 +11,7 @@ void setUp(){}
 /* Required by the unity test framework */
 void tearDown(){}
 
-
+int is_id_valid();
 void test_is_id_valid()
 {
     TEST_ASSERT_EQUAL(0,is_id_valid('000000'));
