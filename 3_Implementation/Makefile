@@ -52,8 +52,7 @@ coverage:${PROJECT_NAME}
 	$(RM) *.gcno
 
 valgrind: all
-	valgrind ./$(Test_$(PROJ_NAME)).$(EXEC)
-
+	valgrind ./$(TEST_PROJ_NAME).$(EXEC)
 clean:
 	$(RM) *.gcda
 	$(RM) *.gcno
