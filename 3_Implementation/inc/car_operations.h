@@ -82,7 +82,7 @@ void end_service ();
 * @param[in] operand2 
 * @return Result of operand1 + operand2
 */
-void is_id_valid ();
+int is_id_valid ();
 
 
 /**
