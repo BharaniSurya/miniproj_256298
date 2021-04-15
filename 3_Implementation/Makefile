@@ -17,14 +17,15 @@ src/update_profile.c \
 src/update_service.c \
 
 # All test source files
-TEST_SRC = src/calculator_operations.c\
-test/test_calculator_operations.c\
+TEST_SRC = src/is_id_valid.c \
+test/car_service_testing.c\
 unity/unity.c\
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).exe
 
 # All include folders with header files
 INC	= inc/car_operations.h \
+inc/car_service_test.h \
 -Iunity\
 
 #Library Inlcudes
