@@ -116,5 +116,5 @@ void car_menu(void)
 int valid_operation(int operation)
 {
     /* Check if the operation is a valid operation */
-    return ((1 <= operation) && (9 >= operation)) ? VALID: INVALID;
+    return ((1 <= operation) && (9 >= operation)) ? 1: 0;
 }

@@ -1,5 +1,6 @@
 #include "car_operations.h"
 
+int is_id_valid();
 void create_profile()
 {
     int s=0;
@@ -17,7 +18,7 @@ void create_profile()
         fflush(stdin);
         fgets(p.id,5,stdin);
         
-        s = is_id_valid(p.id);
+        s=is_id_valid(p.id);
         if (s)
         {
             printf("\nid is not unique. Please enter again.");
