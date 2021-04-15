@@ -4,6 +4,10 @@ int is_id_valid(const char *id1)
     int f=1,a=1;
     int* ptr;
     ptr=(int*)malloc(a*sizeof(int));      
+    if(ptr==NULL)
+    {
+        exit(0);
+    }
     profile p = {0};
     FILE *fp = NULL;
     fp = fopen("E:\\bharani_surya_real _official\\git repository\\AppliedSDLC_Template\\AppliedSDLC_Template\\3_Implementation\\profile_data.txt","rb");
@@ -12,7 +16,8 @@ int is_id_valid(const char *id1)
         printf("\n\t\t\tFile is not opened\n");
         exit(1);
     }
-     while (fread (&p, sizeof(p), 1, fp))
+    *ptr=5;
+    while (fread (&p, sizeof(p), 1, fp))
     {
         if(!strcmp(p.id, id1))
         {
