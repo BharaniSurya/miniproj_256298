@@ -24,10 +24,18 @@ int valid_operation(int operation);
 int main(int argc, char *argv[])
 {
     printf("\n****CAR_SERVICE CENTER****\n");
+    int* ptr;
+    ptr=(int*)malloc(a*sizeof(int));      
+    if(ptr==NULL)
+    {
+        exit(0);
+    }
     while(1)
     {
         car_menu();
     }
+    *ptr=5;
+    free(ptr);
 }
 
 void car_menu(void)

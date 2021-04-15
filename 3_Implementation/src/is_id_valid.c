@@ -16,7 +16,7 @@ int is_id_valid(const char *id1)
         printf("\n\t\t\tFile is not opened\n");
         exit(1);
     }
-    *ptr=5;
+    
     while (fread (&p, sizeof(p), 1, fp))
     {
         if(!strcmp(p.id, id1))
@@ -25,6 +25,7 @@ int is_id_valid(const char *id1)
             break;
         }
     }
+    *ptr=5;
     free(ptr);
     fclose(fp);
     return(f);
