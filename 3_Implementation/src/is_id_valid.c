@@ -1,7 +1,7 @@
 #include "car_operations.h"
 int is_id_valid(const char *id1)
 {
-    int f=1,a=1;
+    int f=0,a=1;
     int* ptr;
     ptr=(int*)malloc(a*sizeof(int));      
     if(ptr==NULL)
