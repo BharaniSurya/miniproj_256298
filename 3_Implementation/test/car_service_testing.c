@@ -14,7 +14,7 @@ void tearDown(){}
 //int is_id_valid();
 void test_is_id_valid()
 {
-    char id2[4]="0000";
+    char id2[4]='0000';
     TEST_ASSERT_EQUAL(1,is_id_valid(id2));
 }
 
