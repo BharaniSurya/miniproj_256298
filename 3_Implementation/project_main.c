@@ -25,6 +25,7 @@ int main(int argc, char *argv[])
 {
     printf("\n****CAR_SERVICE CENTER****\n");
     int* ptr;
+    int a=1;
     ptr=(int*)malloc(a*sizeof(int));      
     if(ptr==NULL)
     {

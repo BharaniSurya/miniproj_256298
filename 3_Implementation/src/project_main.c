@@ -23,6 +23,7 @@ int valid_operation(int operation);
 /* Start of the application */
 int main(int argc, char *argv[])
 {
+    int a=1;
     printf("\n****CAR_SERVICE_CENTER****\n");
     int* ptr;
     ptr=(int*)malloc(a*sizeof(int));      
