@@ -5,16 +5,16 @@ PROJECT_NAME = Car_Service_Management
 BUILD = src
 
 # All source code files
-SRC = project_main.c\
-src/create_profile.c\
-src/create_service.c\
-src/delete_profile.c\
-src/end_service.c\
-src/is_id_valid.c\
-src/search_profile.c\
-src/search_service.c\
-src/update_profile.c\
-src/update_service.c\
+SRC = src/project_main.c \
+src/create_profile.c \
+src/create_service.c \
+src/delete_profile.c \
+src/end_service.c \
+src/is_id_valid.c \
+src/search_profile.c \
+src/search_service.c \
+src/update_profile.c \
+src/update_service.c \
 
 # All test source files
 TEST_SRC = src/calculator_operations.c\
