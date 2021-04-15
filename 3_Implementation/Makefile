@@ -16,15 +16,24 @@ src/search_service.c \
 src/update_profile.c \
 src/update_service.c 
 
+
+COV_SRC = test.c
+
+TEST_SRC = test/test.c \
+unity/unity.c 
+INC_H = inc
+INC_T = unity
+
+
 # All test source files
-TEST_SRC = src/is_id_valid.c \
+#TEST_SRC = src/is_id_valid.c \
 test/car_service_testing.c\
 unity/unity.c
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).exe
 
 # All include folders with header files
-INC	= inc/car_operations.h \
+#INC	= inc/car_operations.h \
 inc/car_service_test.h \
 unity/unity_internals.h \
 unity/unity.h \
