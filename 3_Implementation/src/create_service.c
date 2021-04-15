@@ -1,5 +1,5 @@
 #include "car_operations.h"
-
+int is_id_valid(const char*);
 void create_service()
 {
     int s=0;
