@@ -1,7 +1,7 @@
 #include "car_operations.h"
 
-void car_menu();
-
+//void car_menu();
+//int valid_operation();
 /* Start of the application */
 int main(int argc, char *argv[])
 {

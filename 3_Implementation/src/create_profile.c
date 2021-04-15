@@ -1,6 +1,6 @@
 #include "car_operations.h"
 
-int is_id_valid(const char*);
+//int is_id_valid(const char*);
 void create_profile()
 {
     int s=0;
