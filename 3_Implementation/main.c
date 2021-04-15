@@ -3,7 +3,7 @@
 void car_menu();
 int valid_operation();
 /* Start of the application */
-int main( )
+int main()
 {
     printf("\n****CAR_SERVICE CENTER****\n");
     int* ptr;
