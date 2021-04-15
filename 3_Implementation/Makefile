@@ -2,7 +2,7 @@
 PROJECT_NAME = Car_Service_Management 
 
 # Output directory
-BUILD = src 
+BUILD = Build  
 
 # All source code files
 SRC = src/project_main.c \
@@ -17,9 +17,9 @@ src/update_profile.c \
 src/update_service.c 
 
 
-COV_SRC = test.c
+#COV_SRC = test.c
 
-TEST_SRC = test/test.c \
+#TEST_SRC = test/test.c \
 unity/unity.c 
 
 #INC_H = inc
@@ -39,7 +39,7 @@ INC	= -Iinc \
 #Library Inlcudes
 #if working with CUnit 
 #INCLUDE_LIBS = -lcunit
-INCLUDE_LIBS =
+#INCLUDE_LIBS =
 
 # Project Output name
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).exe
