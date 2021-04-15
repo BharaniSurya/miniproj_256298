@@ -2,8 +2,7 @@ PROJ_NAME = CAR_SERVICE
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 
-SRC = main.c \
-src/create_profile.c \
+SRC = src/create_profile.c \
 src/create_service.c \
 src/delete_profile.c \
 src/end_service.c \
