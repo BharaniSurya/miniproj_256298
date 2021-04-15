@@ -48,9 +48,78 @@ typedef struct service{
 * @param[in] operand2 
 * @return Result of operand1 + operand2
 */
-int add(int operand1, int operand2);
+void create_profile ();
 
 
+/**
+*  adds the operand1 and operand2 and returns the result
+* @param[in] operand1 
+* @param[in] operand2 
+* @return Result of operand1 + operand2
+*/
+void create_service ();
+
+/**
+*  adds the operand1 and operand2 and returns the result
+* @param[in] operand1 
+* @param[in] operand2 
+* @return Result of operand1 + operand2
+*/
+void delete_profile ();
+
+/**
+*  adds the operand1 and operand2 and returns the result
+* @param[in] operand1 
+* @param[in] operand2 
+* @return Result of operand1 + operand2
+*/
+void end_service ();
+
+
+/**
+*  adds the operand1 and operand2 and returns the result
+* @param[in] operand1 
+* @param[in] operand2 
+* @return Result of operand1 + operand2
+*/
+void is_id_valid ();
+
+
+/**
+*  adds the operand1 and operand2 and returns the result
+* @param[in] operand1 
+* @param[in] operand2 
+* @return Result of operand1 + operand2
+*/
+void search_profile ();
+
+
+
+/**
+*  adds the operand1 and operand2 and returns the result
+* @param[in] operand1 
+* @param[in] operand2 
+* @return Result of operand1 + operand2
+*/
+void search_service ();
+
+
+
+/**
+*  adds the operand1 and operand2 and returns the result
+* @param[in] operand1 
+* @param[in] operand2 
+* @return Result of operand1 + operand2
+*/
+void update_profile ();
+
+/**
+*  adds the operand1 and operand2 and returns the result
+* @param[in] operand1 
+* @param[in] operand2 
+* @return Result of operand1 + operand2
+*/
+void update_service ();
 
 /**
 *  subtracts the operand1, operand2 and returns the result

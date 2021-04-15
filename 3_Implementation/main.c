@@ -25,6 +25,7 @@ int main(int argc, char *argv[])
 
 void car_menu(void)
 {
+    int car_operation;
     printf("\nAvailable Operations\n");
     printf("\n1. create profile\n2. update profile\n3. delete profile \n4.create service \n5.update service \n6.End service \n7. search profile \n8.search service \n9. Exit");
     printf("\n\tEnter your choice\n");
