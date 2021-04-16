@@ -4,7 +4,7 @@ Visit [Pages for Report -optional](using github.io option)
 
 Build | Code Quality | Unity | [Git Inspector](using github.io option)
 ------|----------|-------|--------------
-[![C/C++ CI](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/c-cpp.yml) | [![Static Cppcheck](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/cppcheck.yml) [![Dynamic Valgrind](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/CodeQuality_Dynamic.yml/badge.svg)](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/CodeQuality_Dynamic.yml)| [![Unity - Unit Testing](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/unity.yml/badge.svg)](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/unity.yml)| [![Git Inspector](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/gitinspector.yml)
+[![C/C++ CI - Build Status](https://github.com/BharaniSurya/miniproj_256298/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/BharaniSurya/miniproj_256298/actions/workflows/c-cpp.yml) | [![Code Quality - Static Code - Cppcheck](https://github.com/BharaniSurya/miniproj_256298/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/BharaniSurya/miniproj_256298/actions/workflows/cppcheck.yml) [![CodeQuality Dynamic Code Analysis Valgrind](https://github.com/BharaniSurya/miniproj_256298/actions/workflows/CodeQuality_Dynamic.yml/badge.svg)](https://github.com/BharaniSurya/miniproj_256298/actions/workflows/CodeQuality_Dynamic.yml) | [![Unit Testing - Unity](https://github.com/BharaniSurya/miniproj_256298/actions/workflows/unity.yml/badge.svg)](https://github.com/BharaniSurya/miniproj_256298/actions/workflows/unity.yml) |[![Contribution Check - Git Inspector](https://github.com/BharaniSurya/miniproj_256298/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/BharaniSurya/miniproj_256298/actions/workflows/gitinspector.yml)
 
 
 ## Folder Structure
@@ -19,15 +19,13 @@ Folder             | Description
 
 PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
-`ABC` | 12345678  | Feature A, B etc    | X No     | X No   |X No   |X No     
-`DEF` | 12345678  | Feature C, D etc    | X No     | X No   |X No   |X No     
+`256298` | Bharani Surya s  | ALL    |     No     | X No   |3 No   |3 No     
+     
 
 ## Challenges Faced and How Was It Overcome
 
-1. ABC
-2. BCD
-3. ...
-4. ...
+1. file handling error , by properly using the files and syntax.
+2. unable to create access other file functions , by declaring it in header file. 
 
 ## Learning Resources
 1. [markdownCheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
