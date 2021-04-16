@@ -19,7 +19,7 @@ Folder             | Description
 
 PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
-`256298` | Bharani Surya s  | ALL    |     No     | X No   |3 No   |3 No     
+`256298` | Bharani Surya s  | ALL    |    2 No     | 2 No   |3 No   |3 No     
      
 
 ## Challenges Faced and How Was It Overcome
