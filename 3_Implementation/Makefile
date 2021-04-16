@@ -1,5 +1,5 @@
 PROJ_NAME = CAR_SERVICE
-TEST_PROJ_NAME = Test_$(PROJ_NAME)
+#TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 
 SRC = src/create_profile.c \
@@ -14,6 +14,8 @@ src/update_service.c
 
 TEST_SRC = test/car_service_testing.c\
 unity/unity.c
+
+COV_SRC = test/car_service_testing.c\
 
 INC = -Iinc\
 -Iunity
