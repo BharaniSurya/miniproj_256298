@@ -46,7 +46,7 @@ test: $(SRC) $(TEST_SRC)
 	gcc $(SRC) $(TEST_SRC) $(INC) -lm -o $(TEST_PROJ_NAME).$(EXEC)
 	./$(TEST_PROJ_NAME).$(EXEC)
 
-coverage:${PROJECT_NAME}
+coverage:
 	gcc -fprofile-arcs -ftest-coverage $(SRC) $(TEST_SRC) $(INC) -lm -o $(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
 	$(call FixPath,./$(TEST_PROJ_NAME).$(EXEC))
 	gcov -a main.c
