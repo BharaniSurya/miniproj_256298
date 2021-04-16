@@ -91,7 +91,7 @@ int is_id_valid ();
 * @param[in] operand2 
 * @return Result of operand1 + operand2
 */
-void search_profile ();
+int search_profile();
 
 
 
