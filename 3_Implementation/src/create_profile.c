@@ -1,7 +1,7 @@
 #include "car_operations.h"
 
 int is_id_valid(const char*);
-void create_profile()
+int create_profile()
 {
     int s=0;
     profile p={0};
@@ -37,5 +37,6 @@ void create_profile()
     
     fwrite(&p,sizeof(p), 1, fp);
     fclose(fp);
+    return(1);
 
 }

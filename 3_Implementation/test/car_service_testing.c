@@ -17,7 +17,11 @@ void test_is_id_valid()
     
     TEST_ASSERT_EQUAL(1,1);
 }
-
+void test_create_profile()
+{
+    
+    TEST_ASSERT_EQUAL(1,create_profile());
+}
 
 
 int test_main(void)
@@ -25,7 +29,8 @@ int test_main(void)
     UNITY_BEGIN();
 
     RUN_TEST(test_is_id_valid);
-
+    RUN_TEST(test_create_profile);
+    
     return UNITY_END();
 }
 
