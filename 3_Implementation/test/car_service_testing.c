@@ -29,7 +29,7 @@ void test_create_profile()
 }
 void test_search_profile()
 {
-    TEST_ASSERT_EQUAL(1,seaarch_profile());
+    TEST_ASSERT_EQUAL(1,search_profile());
 }
 
 
