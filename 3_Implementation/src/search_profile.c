@@ -1,6 +1,6 @@
 #include "car_operations.h"
 
-void search_profile()
+int search_profile()
 {
     int f=0;
     profile p={0};
@@ -33,4 +33,5 @@ void search_profile()
         getchar();
     }
     fclose(fp);
+    return 1;
 }    
