@@ -12,6 +12,7 @@ void setUp(){}
 void tearDown(){}
 
 //int is_id_valid();
+/*
 void test_valid_operation()
 {
     
@@ -19,7 +20,7 @@ void test_valid_operation()
     TEST_ASSERT_EQUAL(1,valid_operation(9));
     TEST_ASSERT_EQUAL(0,valid_operation(11));
     TEST_ASSERT_EQUAL(0,valid_operation(0));
-}
+}*/
 
 void test_create_profile()
 {
@@ -36,7 +37,7 @@ int test_main(void)
 {
     UNITY_BEGIN();
 
-    RUN_TEST(test_valid_operation);
+    //RUN_TEST(test_valid_operation);
     RUN_TEST(test_create_profile);
     RUN_TEST(test_search_profile);
 
