@@ -13,10 +13,12 @@
 
 
 /**
-*  adds the operand1 and operand2 and returns the result
-* @param[in] operand1 
-* @param[in] operand2 
-* @return Result of operand1 + operand2
+*  struct that has profile contents 
+* @param[in] id
+* @param[in] name 
+* @param[in] phone_numb
+* @param[in] email_id 
+* @return nil
 */
 typedef struct profile{
     char id[5];
@@ -27,10 +29,13 @@ typedef struct profile{
 
 
 /**
-*  adds the operand1 and operand2 and returns the result
-* @param[in] operand1 
-* @param[in] operand2 
-* @return Result of operand1 + operand2
+*  struct that has service contents 
+* @param[in] id
+* @param[in] car_number
+* @param[in] car_model
+* @param[in] regualr_service
+* @param[in] no_of_extra_service 
+* @return nil
 */
 typedef struct service{
     char id[5];
@@ -43,81 +48,72 @@ typedef struct service{
 
 
 /**
-*  adds the operand1 and operand2 and returns the result
-* @param[in] operand1 
-* @param[in] operand2 
-* @return Result of operand1 + operand2
+*  creates profile by getting info from user
+* @param[in]  id  
+* @return nil-creates profile 
 */
 int create_profile ();
 
 
 /**
-*  adds the operand1 and operand2 and returns the result
-* @param[in] operand1 
-* @param[in] operand2 
-* @return Result of operand1 + operand2
+*  creates service by getting info from user
+* @param[in]  id  
+* @return nil-creates service 
 */
 void create_service ();
 
 /**
-*  adds the operand1 and operand2 and returns the result
-* @param[in] operand1 
-* @param[in] operand2 
-* @return Result of operand1 + operand2
+*  deletes profile by getting id from user
+* @param[in]  id  
+* @return nil-delete profile 
 */
 void delete_profile ();
 
 /**
-*  adds the operand1 and operand2 and returns the result
-* @param[in] operand1 
-* @param[in] operand2 
-* @return Result of operand1 + operand2
+*  deletes service by getting id from user
+* @param[in]  id  
+* @return nil-end service 
 */
 void end_service ();
 
 
 /**
-*  adds the operand1 and operand2 and returns the result
-* @param[in] operand1 
-* @param[in] operand2 
-* @return Result of operand1 + operand2
+*  check if id is valid
+* @param[in]  id  
+* @return if id is valid
 */
 int is_id_valid ();
 
 
 /**
-*  adds the operand1 and operand2 and returns the result
-* @param[in] operand1 
-* @param[in] operand2 
-* @return Result of operand1 + operand2
+*  search profile by getting id from user
+* @param[in]  id  
+* @return nil-search profile 
 */
 int search_profile();
 
 
 
 /**
-*  adds the operand1 and operand2 and returns the result
-* @param[in] operand1 
-* @param[in] operand2 
-* @return Result of operand1 + operand2
+*  search service by getting id from user
+* @param[in]  id  
+* @return nil-search service
 */
 void search_service ();
 
 
 
 /**
-*  adds the operand1 and operand2 and returns the result
-* @param[in] operand1 
-* @param[in] operand2 
-* @return Result of operand1 + operand2
+*  update profile by getting id from user
+* @param[in]  id  
+* @return nil-update profile 
 */
 void update_profile ();
 
 /**
-*  adds the operand1 and operand2 and returns the result
-* @param[in] operand1 
-* @param[in] operand2 
-* @return Result of operand1 + operand2
+*   update service by getting id from user
+* @param[in]  id  
+* @return nil-update service 
 */
 void update_service ();
 
