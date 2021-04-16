@@ -20,10 +20,11 @@ How can we improvise it in future?
 the customers to view the process going on the car and alert automatically to the customer to pickup the vehicle after the completion of the service.
  
 ## Cost and Features
-![Description](Link to Pic)
--- Content 
+    1. File space to store record
+    2. offline system useage
+
 ## Defining Our System
-    -- TBD
+   ![system definition](https://github.com/BharaniSurya/miniproj_256298/blob/main/1_Requirements/system_define.PNG)
 ## SWOT ANALYSIS
 ### s:
    makes easy to maintain a record.
